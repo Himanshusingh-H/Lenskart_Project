@@ -1,0 +1,252 @@
+/* FILTER section STYLES FORM (frame type frame shape) HERE  */
+
+/* FILTER section STYLES FORM (frame type frame shape) HERE  */
+
+div.filters {
+    border: 1px solid #ededed;
+    width: 21%;
+    height: 700px;
+    overflow: scroll;
+    color: #5a5a5a;
+    position: fixed;
+    margin-top: 0%;
+}
+
+div.filters h3 {
+    margin-left: 20px;
+}
+
+div.filters div.frame-type,
+div.filters div.frame-shape {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+div.filters div.frame-type div,
+div.filters div.frame-shape div {
+    padding: 10px 2px;
+    width: 70px;
+    /* height:70px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    font-size: small;
+    margin: 2px;
+    /* border: 1px solid yellowgreen; */
+}
+
+div.filters div.frame-type img,
+div.filters div.frame-shape img {
+    width: 58px;
+    height: 31px;
+}
+
+div.filters div.frame-type div:hover,
+div.filters div.frame-shape div:hover {
+    border: 1px solid #6E5A64;
+    cursor: pointer;
+}
+
+div.glassfilter {
+    width: 80%;
+    left: 21%;
+    margin-top: 91px;
+    position: relative;
+    background: rgb(242, 242, 242);
+}
+
+div.sectionHeading {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: #EDEDED;
+    flex-flow: row nowrap;
+}
+
+div.sectionHeading div {
+    width: 33%;
+}
+
+div.filters div.colors {
+    margin-left: 20px;
+    height: 200px;
+    overflow: scroll;
+}
+
+div.sectionHeading div * {
+    margin: 4px;
+}
+
+div.sectionHeading>div>select {
+    /* border: 2px;*/
+    padding: 5px;
+    border: none;
+}
+
+div.filters div.menus {
+    font-size: small;
+    font-weight: bolder;
+}
+
+div.filters div.menus div {
+    padding: 25px 5px;
+    border-bottom: 1px solid #cecece;
+}
+
+div.filters div.menus img {
+    float: right;
+}
+
+div.filters div.menus div:nth-child(1) {
+    border-top: 1px solid #cecece;
+}
+
+div.filters div.menus div:hover {
+    cursor: pointer;
+}
+
+div.filters div.menus div:active {
+    border-top: 5px solid #cecece;
+}
+
+p.showing {
+    width: 160px;
+    margin: 10px auto;
+    font-size: small;
+}
+
+/* FILTER section STYLES ENDED HERE  */
+
+/* PRODUCTS STYLING FORM HERE */
+h3,
+span,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+#results {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+    margin: 0;
+}
+
+@media (min-width: 651px) and (max-width: 968px) {
+    #results {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 200px) and (max-width: 650px) {
+    #results {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+#results>div {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* padding: 10px; */
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#results>div>h3 {
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#results>div>div>img {
+    width: 100%;
+    height: 140px;
+
+}
+
+.ratings_imgs {
+    text-align: left;
+    margin-left: 10px;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #616161;
+    font-size: 12px;
+}
+
+
+#results>div>div>img:hover {
+    transform: scale3d(1.08, 1.08, 1.08);
+    transition: ease-in-out 0.4s;
+}
+
+.detailsparent {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+}
+
+.detailsparent>div:nth-child(1)>p {
+    /* border: 1px solid; */
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.detailsparent>div:nth-child(1)>p:last-of-type {
+    /* border: 1px solid; */
+    font-size: 15px;
+    font-weight: bolder;
+    /* margin-bottom: 3px; */
+}
+
+.detailsparent>div:nth-child(2) {
+    /* border: 1px solid ; */
+    display: flex;
+    margin-left: 2px;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.detailsparent>div:nth-child(2)>div:nth-child(1) {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(255, 187, 0);
+    margin-right: 2px;
+    border-radius: 10px;
+}
+
+.detailsparent>div:nth-child(2)>div:nth-child(2) {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(0, 187, 255);
+    margin-right: 2px;
+    border-radius: 10px;
+}
+
+.detailsparent>div:nth-child(2)>div:nth-child(3) {
+    width: 15px;
+    height: 15px;
+    background-color: rgb(224, 167, 206);
+    margin-right: 2px;
+    border-radius: 10px;
+}
+
+#results>div>div:last-of-type>p {
+    /* border: 1px solid red; */
+    background: linear-gradient(90deg, rgba(61, 179, 168, 1) 0%, rgba(220, 187, 61, 1) 100%);
+    color: white;
+    width: 110%;
+    padding-left: 10px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    margin-top: 5px;
+}
+
+.tax {
+    color: #BDBDBD;
+}

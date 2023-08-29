@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: rgb(90, 241, 249);
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 80%;
+}
+pre{
+    text-align: left;
+    font-size:30px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+.Mainlogin{
+    padding: 1%;
+  width: 450px;
+  height: 700px;
+  margin: auto;
+  background-color: rgb(221, 220, 222);
+  font-family: sans-serif;
+  border-radius: 10px;
+}
+
+.container {
+  padding: 10px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<form class="form-container" id="myform" action="login.php" method="post">
+    <div class="Mainlogin">
+  <div class="imgcontainer">
+    
+    <img src="https://static1.lenskart.com/media/desktop/img/DesignStudioIcons/DesktopLoginImage.svg" width="425px">
+    &nbsp; <pre> Sign In</pre>
+  </div>
+  <div class="container">
+    <label for="uname"><b>Email Id</b></label>
+    <input type="text" placeholder="Enter email" name="email_id" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+        
+    <input type="submit" style="border-radius: 40px;color: black;font-size: 20px;"><bold>SignIn</bold></button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+    <p>Don't have account?<a href="signup.html">SignUp</a></p>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw"> <a href="#">Forgot password?</a></span>
+  </div>
+</div>
+</form>
+
+</body>
+</html>

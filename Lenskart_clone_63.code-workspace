@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"name": "Lenskart_clone_63",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "Lenskart_clone_63"
+	}
+}
